@@ -5,12 +5,11 @@
 #   :anxiousness => rand(1..3)
 # }
 
-#readers
-
+# readers
 
 class Person
 
-#instance methods
+# instance methods
   def initialize(name)
     @name = name
     @emotions = {
@@ -27,13 +26,13 @@ class Person
 
   def feelings(person)
     @emotions.each do |emotion,level|
-    puts "#{@name} is feeling a #{level} amount of #{emotion}"
+      puts "#{@name} is feeling a #{level} amount of #{emotion}"
     end
   end
 end
 
 person1 = Person.new("Nico")
 person2 = Person.new("David")
-#puts person1.inspect
+# puts person1.inspect
 puts person1.feelings(person1)
 puts person2.feelings(person2)
